@@ -1,0 +1,75 @@
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+ int main () {
+    float num1,num2,res;
+    char operador;
+
+    cout<< "Vamos a realizar algunas operaciones Ahmed:" <<endl;
+    cout<< "1: Suma" <<endl;
+    cout<< "2: Resta" <<endl;
+    cout<< "3: Multiplicacion" <<endl;
+    cout<< "4: Division" <<endl;
+    cout<< "5: Raiz cuadrada" <<endl;
+    cout<< "6: Exponenciacion" <<endl;
+    cin>> operador;
+    
+
+    
+    switch(operador){
+        case '1':
+            cout<< "Ingrese el primer digito para la suma: " <<endl;
+            cin>> num1;
+            cout<< "Ingrese el segundo digito para la suma: " <<endl;
+            cin>> num2;
+        res=num1+num2;
+        break;
+
+        case '2':
+            cout<< "Ingrese el primer digito para la resta: " <<endl;
+            cin>> num1;
+            cout<< "Ingrese el segundo digito para la resta: " <<endl;
+            cin>> num2;
+        res=num1-num2;
+        break;
+
+        case '3':
+            cout<< "Ingrese el primer digito para la multiplicacion: " <<endl;
+            cin>> num1;
+            cout<< "Ingrese el segundo digito para la multiplicacion: " <<endl;
+            cin>> num2;
+        res=num1*num2;
+        break;
+
+        case '4':
+            cout<< "Ingrese el primer digito para la division: " <<endl;
+            cin>> num1;
+            cout<< "Ingrese el segundo digito para la division: " <<endl;
+            cin>> num2;
+        res=num1/num2;
+        break;
+
+        case '5':
+            cout<< "Ingrese el numero que desea saber su raiz cuadrada: " <<endl;
+            cin>> num1;
+        res=sqrt(num1);
+        break;
+
+        case '6':
+            cout<< "Ingrese el numero que desea exponenciar: " <<endl;
+            cin>> num1;
+            cout<< "Ingrese el numero por el desee exponenciar el anterior: " <<endl;
+            cin>> num2;
+        res= pow(num1, num2);
+        break;
+
+        default:
+        cout<< "Operacion no valida ctm" <<endl;
+        return 1;
+    }
+
+    cout<< "El resultado es: " <<res <<endl;
+
+    return 0;
+}
